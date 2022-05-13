@@ -39,4 +39,14 @@ Dans cette même requête on trouve l'adresse mac du téléphone.
 Il nous reste juste à convertir notre chaine de caractère (0C:B3:19:B9:4F:C6GT-S7390G) en SHA1 avec un convertisseur en ligne
 On obtient le résultat suivant => c1d0349c153ed96fe2fadf44e880aef9e69c122b
 
-#
+# CISCO
+
+On ouvre le fichier
+On remarque qu'a plusieurs reprise il y a des mots de passe sous la forme => username password 7
+En faisant des recherches, on tombe sur un convertisseur de mot de passe CISCO
+Nous avons tester avec les différents utilisateur présent dans le fichier
+
+=> Pour l'utilisateur Hub ; 6sK0_hub => Pour l'utilisateur Admin ; 6sK0_admin
+
+On remarque ici un schéma de mot de passe avec 6sK0_ puis le nom d'utilisateur
+Le mot de passe du challenge est donc 6sK0_enable
